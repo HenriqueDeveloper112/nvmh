@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de Filmes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .movie-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .movie {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .movie img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .movie h2 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site de Filmes</h1>
+    </header>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Ação</a>
+        <a href="#">Comédia</a>
+        <a href="#">Drama</a>
+        <a href="#">Ficção Científica</a>
+    </nav>
+    <div class="container">
+        <h2>Filmes em Destaque</h2>
+        <div class="movie-list">
+            <div class="movie">
+                <img src="filme1.jpg" alt="Filme 1">
+                <h2>Filme 1</h2>
+            </div>
+            <div class="movie">
+                <img src="filme2.jpg" alt="Filme 2">
+                <h2>Filme 2</h2>
+            </div>
+            <div class="movie">
+                <img src="filme3.jpg" alt="Filme 3">
+                <h2>Filme 3</h2>
+            </div>
+            <!-- Adicione mais filmes aqui -->
+        </div>
+    </div>
+</body>
+</html>
 
